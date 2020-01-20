@@ -39,8 +39,7 @@
   background-color: #04042c;
   color: #dce3f3;
   width: 35vw;
-  height: 10vh;
-  margin: 0vw 3vw 3vw 3vw;
+  height: 8vh;
   font-size: 1rem;
   border-radius: 2vw;
   font-weight: bold;
@@ -52,8 +51,7 @@
   background-color: #e0245c;
   color: #dce3f3;
   width: 35vw;
-  height: 10vh;
-  margin: 0vw 3vw 3vw 3vw;
+  height: 8vh;
   font-size: 1rem;
   border-radius: 2vw;
   font-weight: bold;
@@ -63,52 +61,13 @@
 
 /*inputs das telas*/
 
-.input-address {
+.input-register {
   border-radius: 2vw;
   width: 70vw;
   height: 4vh;
   margin: 0vw 3vw 1vw 3vw;
   padding: 1vw;
-}
-
-.input-additionalAddress {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-CEP {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-city {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-CNPJ {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-email {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
+  outline: none;
 }
 
 .input-estate {
@@ -117,46 +76,7 @@
   height: 6vh;
   margin: 0vw 3vw 1vw 3vw;
   padding: 1vw;
-}
-
-.input-name {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-neighborhood {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-number {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-password {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-}
-
-.input-phone {
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
+  outline: none;
 }
 
 .login-buttons {
@@ -170,23 +90,19 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
 }
 
 .login-logo {
-  width: 30vw;
+  width: 40%;
   height: auto;
-  padding-bottom: 4vw;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .login-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-image: linear-gradient(to right, #04042c, #041484);
-  width: 100vw;
   height: 100vh;
-  margin: 0;
 }
 
 .login-section {
@@ -197,46 +113,32 @@
 
 /*tela do registro: demais configurações*/
 
-.register-main {
-  color: black
-}
-
-.register-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .register-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 1vw 6vw 1vw 6vw;
   align-items: center;
 }
 
 .register-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-image: linear-gradient(to bottom, #2c54b3, #041484);
-  width: 100vw;
   color: #edf1f4;
-  padding-top: 4vw;
 }
 
 .register-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
+  margin-top: 5%;
 }
 
 .register-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
 }
 
 /*A PARTIR DAQUI É A ESTILIZAÇÃO DE PÁGINAS EVENT, HOME E PROFILE */
@@ -264,8 +166,6 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 100vw;
-  left: 0;
 }
 
 .my-home{
@@ -355,9 +255,6 @@
   height: 20vh;
   border: black;
   padding: 10px;
-  box-shadow: 2vw 2vw 4vw #e0245c;
-  border-radius: 5vw; 
-  margin: 1vw;
 }
 
 .image {
@@ -374,7 +271,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 80%;
+  /* font-size: 80%; */
 }
 
 .btn-delete{
@@ -400,16 +297,13 @@
 .about-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(to bottom, #2c54b3, #041484);
   color: #edf1f4;
   padding: 2vw;
-  width: 100vw;
 }
 
 .about-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
@@ -426,39 +320,12 @@
 }
 
 /* css page event  */
-.input-image{
+.input-post{
   border-radius: 2vw;
     width: 70vw;
     height: 4vh;
     margin: 0vw 3vw 1vw 3vw;
     padding: 1vw;
-
-}
-
-.input-bandName{
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-
-}
-.input-date{
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-
-}
-
-.input-time{
-  border-radius: 2vw;
-  width: 70vw;
-  height: 4vh;
-  margin: 0vw 3vw 1vw 3vw;
-  padding: 1vw;
-
 }
 
 .form-event{
@@ -475,6 +342,88 @@
   align-items: center;
   justify-content: center;
   margin: 24px;
+}
+
+@media (min-width: 1200px) {
+  .login-logo {
+    width: 15%;
+    height: auto;
+    margin-top: 8%;
+    margin-bottom: 8%; 
+  }
+  .input-register {
+    border-radius: 6px;
+    width: 80%;
+    height: 30%;
+  }
+  .button-login {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  
+  .button-register {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  .input-estate {
+    border-radius: 6px;
+    width: 82%;
+    height: 50px;
+  }
+  .button-back {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  
+  .button-continue {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .register-buttons {
+    justify-content: space-around;
+  }
+  .my-home{
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .header {
+    flex-direction: row;
+    height: 10%;
+
+  }
+  .my-home{
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .header-title {
+    font-size: 30px;
+  }
+  .footer {
+    height: 10%;
+  }
+  .menu-options {
+    font-size: 30px;
+    height: 15%;
+  }
+  .toggle-side-menu:checked+.side-menu {
+    width: 20%;
+    top: 20%;
+  }
+  .input-post{
+    width: 40%;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .image {
+    width: 20vw;
+  }
+  
 }
 
 @media only screen and (min-width: 576px) {

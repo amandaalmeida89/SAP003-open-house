@@ -74,7 +74,7 @@ const backToLogin = () => {
 
 const Register = () => {
   const template = `
-  <main class = "register-main">
+  <section class="register-main">
     <div class="register-title">
       <h1 >Bem vindo ao liveinSampa!</h1>
       <h2>Informações do Estabelecimento:</h2>
@@ -82,63 +82,63 @@ const Register = () => {
     <div>
       <form class="register-form" class="form">
         ${Input({
-        class: 'input-name',
+        class: 'input-name input-register',
         placeholder: 'Nome do estabelecimento',
         type: 'text',
         })}
         ${Input({
-        class: 'input-CNPJ',
+        class: 'input-CNPJ input-register',
         placeholder: 'CNPJ',
         type: 'number',
         })}
         ${InputFunction({
-        class: 'input-CEP',
+        class: 'input-CEP input-register',
         placeholder: 'CEP - Ex.01234567',
         type: 'number',
         onchange: zipNumber,
         })}
         ${Input({
-        class: 'input-address',
+        class: 'input-address input-register',
         placeholder: 'Endereço - Ex.Rua/Avenida',
         type: 'text',
         })}
         ${Input({
-        class: 'input-number',
+        class: 'input-number input-register',
         placeholder: 'Nº',
         type: 'number',
         })}
         ${Input({
-        class: 'input-additionalAddress',
+        class: 'input-additionalAddress input-register',
         placeholder: 'Complemento',
         type: 'text',
         })}
         ${Input({
-        class: 'input-neighborhood',
+        class: 'input-neighborhood input-register',
         placeholder: 'Bairro',
         type: 'text',
         })}
         ${Input({
-        class: 'input-city',
+        class: 'input-city input-register',
         placeholder: 'Cidade',
         type: 'text',
         })}
-      <select class="input-estate">
+      <select class="input-estate input-register">
         <option value="SP">SP</option>
       </select>
         ${Input({
-        class: 'input-phone',
+        class: 'input-phone input-register',
         placeholder: 'Telefone',
         type: 'number',
         })}
       <h2>Email de Acesso:</h2>
         ${Input({
-        class: 'input-email',
+        class: 'input-email input-register',
         placeholder: 'email@exemplo.com',
         type: 'email',
         })}
       <h2>Senha:</h2>
         ${Input({
-        class: 'input-password',
+        class: 'input-password input-register',
         placeholder: 'Senha',
         type: 'password',
         })}
@@ -157,7 +157,7 @@ const Register = () => {
       })}
     </div>
   </div>
-</main>
+</section>
   `;
 
   return template;

@@ -87,27 +87,23 @@ const Event = (props) => {
       class: 'name',
       text: props.users.name,
       })}
-      ${TitleTwo({
-      class: 'addEvent',
-      text: 'Adicionar Evento',
-      })}
       ${Input({
-      class: 'input-image',
+      class: 'input-image input-post',
       placeholder: 'Insira a URL de sua imagem',
       type: 'text',
       })}
       ${Input({
-      class: 'input-bandName',
+      class: 'input-bandName input-post',
       placeholder: 'Nome da banda/artista',
       type: 'text',
       })}
       ${Input({
-      class: 'input-date',
+      class: 'input-date input-post',
       placeholder: 'Selecione a data',
       type: 'date',
       })}
       ${Input({
-      class: 'input-time',
+      class: 'input-time input-post',
       placeholder: 'Selecione a data',
       type: 'time',
       min: '00:00',
