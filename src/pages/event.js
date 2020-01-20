@@ -85,7 +85,7 @@ const Event = (props) => {
     <form class="form-event">
       ${TitleOne({
       class: 'name',
-      text: props.users.name,
+      text: props.users.name || "Bem Vindo!",
       })}
       ${Input({
       class: 'input-image input-post',
